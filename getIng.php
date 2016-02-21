@@ -1,11 +1,4 @@
-<?php
-    session_start();
 
-    if(isset($_GET['white']))
-    {
-        $white_list_array[] = $_GET['white'];
-    }
-?> 
 <html>
     <head>
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -33,7 +26,6 @@
             <img id="inside" src="img/smiley.png" style="height:300px;width:300px;left:150px" onmouseover="flip()" onmouseout="back()"/>
         </div>
         <div id="lastDiv"  ></div>
-
         
         <div class="jumbotron">
              <div id="whitelist">
@@ -42,17 +34,16 @@
             <div id="blacklist">
              </div>
         </div>
-       
-    
-   
-          <div class="row">
+          <div class="row" id="letscook">
           <div class="form-group">
             <label for="insID" class="col-xs-1 col-xs-offset-3 control-label" style="text-align:right;font-size:22px;">Ingredient</label>
             <div class="col-xs-4">
               <input type="text" class="form-control" name="white" id="ing" placeholder="Enter an ingredient"/>
             </div>
           </div>
+              
           </div>
+            
           <br/>
             
           <div class="row">
@@ -117,6 +108,10 @@
    
         </script>
                 
-
+        <style>
+            body{
+                background-color:#8B7765;
+            }    
+        </style>    
     </body>
 </html>
