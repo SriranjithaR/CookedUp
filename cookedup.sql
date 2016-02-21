@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 21, 2016 at 07:07 AM
+-- Generation Time: Feb 21, 2016 at 07:13 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -94,6 +94,7 @@ CREATE TABLE IF NOT EXISTS `stores` (
 
 INSERT INTO `stores` (`sto_id`, `ingre`, `sto_name`, `sto_lat`, `sto_long`) VALUES
 (3, 'capsicum', 'Nilgiris', 13.040577, 80.193321),
+(3, 'dark chocolate', 'Nilgiris', 13.040577, 80.123322),
 (3, 'fig', 'Nilgiris', 13.040577, 80.193321),
 (4, 'badam', 'Grace Supermarket', 13.040911, 80.196701),
 (4, 'cashewnet', 'Grace Supermarket', 13.040911, 80.196701),
@@ -112,6 +113,7 @@ INSERT INTO `stores` (`sto_id`, `ingre`, `sto_name`, `sto_lat`, `sto_long`) VALU
 (22222, 'badam', 'Brown Tree', 13.041178, 80.215828),
 (22222, 'cashewnet', 'Brown Tree', 13.041178, 80.215828),
 (22222, 'choco chips', 'Brown Tree', 13.041178, 80.215828),
+(22222, 'dark chocolate', 'Brown Tree', 13.041178, 80.215828),
 (22222, 'hazel nut', 'Brown Tree', 13.041178, 80.215828),
 (22222, 'raisins', 'Brown Tree', 13.041178, 80.215828);
 
