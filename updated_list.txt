@@ -8,6 +8,7 @@ Nuts and Spices			13.034520 80.215183 E
 Brown tree			13.041178 80.215827 E
 MPM				13.041149 80.198978
 Rouch				13.040932 80.199229
+Grace Supermarket		13.040911 80.196701
 
 Restraunts :-
 Saravana Bhavan(2)		13.036189 80.203807 (KKN) 13.034926 80.212664 (Pillar)
