@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <!--http://www.webgeekly.com/tutorials/javascript-tutorials/how-to-add-a-google-map-with-marker-to-your-website/ -->
 <html>
-    <head>
+     <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <title>Cooked Up!</title>
+       
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script type="text/javascript">
             function initialize(){
@@ -43,10 +52,7 @@
             var contentString2 = "Grace Supermarket";
             var infoWindow2 = new google.maps.InfoWindow({
                 content : contentString2 
-            });
-            
-            
-            
+            });        
             google.maps.event.addListener(marker,'click',function(){
                     infoWindow.open(map,marker);
             });
@@ -59,10 +65,17 @@
         
         </script>
     </head>
-    <body onload="initialize()">
+    <body onload="initialize()"   class="container">
+        <br>
+        <br>
         
         <div id="map-canvas" style="width:500px; height:500px">
         
         </div>
+        <br>
+        <br>
+        <form action="searchingre.php">
+            <button type="submit" class="btn btn-primary text-center">BACK</button>
+        </form>
     </body>
 </html>

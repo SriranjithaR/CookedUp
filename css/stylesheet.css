@@ -20,10 +20,6 @@ body{
     background-size: 100% ;
 }
 
-#ilny{
-    height:500px;
-    align-content: center;
-}
 
 #scroll{
     background-image: url("../img/food11.jpg");
@@ -43,11 +39,4 @@ body{
     background-image: url(../img/food9.jpg);
 }
 
-#lastDiv{
-    
-    height: 300px;
-  /*  background: url("../img/htc.jpg")  top right no-repeat,
-       url("../img/food1.jpeg") top left repeat-x,
-        url("../img/food3.jpeg") bottom   
-*/
-}
+
