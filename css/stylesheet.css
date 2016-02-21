@@ -1,0 +1,53 @@
+body{
+    margin:0;
+   
+}
+#topDiv{
+    width: auto;
+    height : 50px;
+    text-align: right;
+    background-color: #CDEE8D;
+    padding: 10;
+    font-family: Calibri;
+    font-size: 1.7em;
+}
+
+#secondDiv{
+    
+    height: 500px;
+    background-image: url("../img/food9.jpg");
+     background-repeat: no-repeat;
+    background-size: 100% ;
+}
+
+#ilny{
+    height:500px;
+    align-content: center;
+}
+
+#scroll{
+    background-image: url("../img/food11.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-attachment: fixed;  
+    height:420px;
+    
+    animation-name: changePic;
+    animation-duration: 5sec;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes changePic{
+    background-image: url(../img/food9.jpg);
+}
+
+#lastDiv{
+    
+    height: 300px;
+  /*  background: url("../img/htc.jpg")  top right no-repeat,
+       url("../img/food1.jpeg") top left repeat-x,
+        url("../img/food3.jpeg") bottom   
+*/
+}

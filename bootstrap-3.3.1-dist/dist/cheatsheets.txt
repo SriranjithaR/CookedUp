@@ -1,0 +1,5 @@
+http://www.cheatography.com/masonjo/cheat-sheets/bootstrap/
+
+http://www.taesup.com/bootstrap/
+
+http://www.w3schools.com/bootstrap/bootstrap_ref_css_helpers.asp

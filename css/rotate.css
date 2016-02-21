@@ -1,0 +1,69 @@
+#others{
+    float:left;
+    left:auto;
+    position: relative;
+}
+.rot{
+   
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+
+    margin-left: 20;
+    margin-bottom: 40;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+} 
+
+#pizza{
+    background-image:url("../img/food11.jpg");
+
+}
+
+#ethnic
+{
+     background-image:url("../img/food3.jpeg");
+}
+
+#dessert{
+     background-image:url("../img/food9.jpg");
+}
+
+.rot:hover{
+    transform: rotate(360deg);
+}
+
+
+
+
+#dessert:hover{
+    transform: rotateY(180deg);
+}
+
+#ethnic:hover{
+ transform: rotateX(180deg);
+ 
+}
+
+.rot:hover{
+     transition-duration: 2s;
+    -webkit-animation-name: rotatePic;
+    animation-name: rotatePic;
+    
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotatePic{
+    from{transform:rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+
+
+
