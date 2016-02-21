@@ -1,0 +1,45 @@
+﻿Stores :-
+Pazhamudhir cholai		13.041920 80.193837
+Grace supermarket		13.040916 80.196702
+Vimala supermarket		13.041409 80.196043
+Nilgiris			13.040577 80.193319 
+Grace in krihna sweets		13.034498 80.212830 (Krishna sweets pillar)
+Nuts and Spices			13.034520 80.215183 E
+Brown tree			13.041178 80.215827 E
+MPM				13.041149 80.198978
+Rouch				13.040932 80.199229
+
+Restraunts :-
+Saravana Bhavan(2)		13.036189 80.203807 (KKN) 13.034926 80.212664 (Pillar)
+
+French Loaf 			13.041520 80.199379 (Map still shows it as Baker’s Choice
+Dominos				13.040987 80.198147 -pillar
+Subway				13.041702 80.193572
+Grand sweets			13.042690 80.193599
+Cake point			(not found)
+CCD				(not found)
+Grace Bakery			13.041192 80.197695 (Shows as Royal Terrace Apartments)
+
+
+Krishna Sweets			13.034500 80.212823 (duplicate)
+
+Hot chips			13.036776 80.212170
+Dominos				13.034485 80.213346
+Adyar bakery			13.038930 80.199973
+Spice Island			13.038534 80.202582
+Cream and fudge 		(not found near pillar) 
+
+Cake world			13.041417 80.193370
+Creamy Inn			13.040471 80.192939
+Cake park			13.034444 80.213977
+Ibaco				13.041796 80.194079
+
+Milky way			13.039287 80.199210
+MCD				13.031708 80.211420
+KFC				13.031608 80.211544
+Vimala - french fries 		13.041403 80.196059
+
+Anjappar 			13.032858 80.212134
+Thalappakatti 			13.030944 80.216527
+
+Pizza hut			13.048345 80.196143
