@@ -39,6 +39,7 @@
              <div id="whitelist">
              </div>
             <br>
+            <br>
             <div id="blacklist">
              </div>
         </div>
@@ -61,11 +62,8 @@
             <button class="btn btn-danger btn-block" onclick="addBlackList()">Don't use this</button>
             <br>
             <br>
-        <form action="searchingre.php" method="get">
-            <input type="hidden" name="white_list" id="white_list">
-            <input type="hidden" name="black_list" id="black_list">
-            <button class="btn btn-warning btn-block" onclick="addBlackList()" type="submit">LET'S COOK</button>
-         </form>
+            <button class="btn btn-warning btn-block" onclick="addBlackList()">LET'S COOK</button>
+         
               
               
           </div>
@@ -76,9 +74,6 @@
         
       
         <script>
-            
-             var wlarray = "";
-             var blarray = "";
              $(document).ready(function(){ $('html, body').animate({ scrollTop: $("#letscook").offset().top + $("#letscook").height()/2 - $(window).height()/2 }, 2000); });
 
             function flip()
@@ -93,26 +88,15 @@
             function addWhiteList()
             {
                 var wl = $("#ing").val();
-                if(wl!="")
-                {
-                    $("#whitelist").append("<button class='btn btn-success'>"+wl+"</button><span>  </span>");
+                $("#whitelist").append("<button class='btn btn-success'>"+wl+"</button><span>  </span>");
                 document.getElementById("ing").value="";
-                wlarray = wlarray + "," + wl;
-                
-                document.getElementById("white_list").value=wlarray;
-                }
             }
             
             function addBlackList()
             {
-                var bl = $("#ing").val();
-                if(bl!="")
-                {
-                $("#blacklist").append("<button class='btn btn-danger'>"+bl+"</button><span>  </span>");
+                var wl = $("#ing").val();
+                $("#blacklist").append("<button class='btn btn-danger'>"+wl+"</button><span>  </span>");
                 document.getElementById("ing").value="";
-                blarray = blarray + "," + bl;
-                 document.getElementById("black_list").value=blarray
-                }
             }
    
         </script>
