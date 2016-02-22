@@ -1,16 +1,14 @@
-Stores :-
-Pazhamudhir cholai		13.041920 80.193837
+﻿Stores :-
+Pazhamudhir cholai		13.041920 80.193837 
 Grace supermarket		13.040916 80.196702
-_________________________________________________
 Vimala supermarket		13.041409 80.196043
-Nilgiris			13.040577 80.193319 
+Nilgiris			13.040577 80.193319 E
 Grace in krihna sweets		13.034498 80.212830 (Krishna sweets pillar)
 Nuts and Spices			13.034520 80.215183 E
 Brown tree			13.041178 80.215827 E
 MPM				13.041149 80.198978
-Rouch				13.040932 80.199229
-Grace Supermarket		13.040911 80.196701
-________________________________________________
+Rouch				13.040932 80.199229 E
+Grace Supermarket		13.040911 80.196701 E
 
 Restraunts :-
 Saravana Bhavan(2)		13.036189 80.203807 (KKN) 13.034926 80.212664 (Pillar)

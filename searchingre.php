@@ -75,7 +75,11 @@
                     if($flag == 0){
                         $flag = 1;
                 ?>
-                <table class='table table-hover' style="background-color:white">
+                <br>
+                <br>
+                <br>
+                <table class='table table-hover table-bordered' style="background-image:url('img/food9.jpeg')">
+                <b>
                 <?php
                     echo "<table class='table table-hover'>
                     <tr><td>RECIPE NAME </td><td>".$value['rec_name']."</td></tr>
@@ -95,24 +99,44 @@
             }
        }
                 ?>
+                </b>
+                </table>
+                
                 </form>
                           
         
         
         
-        <form >
+        <form>
+        <center>
          <div class="row">
-            <button class="btn btn-primary btn-lg" type="submit" formaction="getIng.php">BACK</button>
+            <button class="btn  btn-lg" type="submit" formaction="getIng.php" style="background-color:#592d0d;">BACK</button>
         </div>
             <br>
              <div class="row">
-            <a href="https://www.zomato.com/" target="_blank" class="btn btn-primary btn-lg" role="button">FEELING LAZY</a>
+            <a href="https://www.zomato.com/" target="_blank" class="btn btn-lg" style="background-color:#592d0d"  role="button">FEELING LAZY</a>
             </div>
+        </center>
         </form>
         <br>
     <style>
         body{
-            font-weight:bold;
+            font-weight:900  !important;
+            background-image:url("img/bg.jpg");
+        }
+        .table,
+        .table th,
+        .table tr,
+        .table td {
+            background-color: rgba(89,45,13,0.2) !important;
+            color:white;
+        }
+        
+        form,a{
+            color:white;
+        }
+         .btn:hover{
+            color:grey;
         }
     </style>
     </body>
