@@ -1,5 +1,11 @@
+@font-face {
+    font-family: Exo;
+    src: url("../fonts/Exo-Medium.otf");
+}
+
 body{
     margin:0;
+  
    
 }
 #topDiv{
