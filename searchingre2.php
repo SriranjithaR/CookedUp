@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
         <meta name="viewport" content="width=device-width, initial scale=1">
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -9,8 +10,11 @@
         <script src="http://maps.googleapis.com/maps/api/js"></script>
         <title>Cooked Up!</title>
     </head> 
-  
-     
+<style type="text/css">
+    body{
+        font-family: 'ABeeZee', sans-serif;
+    }
+</style>
 <?php
     echo "<body class='container' style='background-color:#FA8258;'";
     $servername = "localhost";

@@ -13,8 +13,8 @@
         <script src="http://maps.googleapis.com/maps/api/js"></script>
         <title>Cooked Up!</title>
     </head>   
-      <body class="container-fluid">
-      
+      <body >
+      <div class="container-fluid">
         <div id="topDiv">          
         </div>
         <div id="secondDiv">
@@ -29,7 +29,7 @@
             <img id="inside" src="img/smiley.png" style="height:300px;width:300px;left:150px" onmouseover="flip()" onmouseout="back()"/>
         </div>
         <br><br>
-        <div ><a href="#ing"><img  src="img/menu_down_arrow.png" height="150px" width="150px" class="img-responsive center-block" /></a></div>
+        <div style="position:fixed;bottom:15px;right:7px;margin:auto;z-index:99"><a href="#ing"><img  src="img/downArrow.png" height="70px" width="70px" class="img-responsive center-block" /></a></div>
         <br>
         <div class="jumbotron text-center" style="margin:auto;background-color:transparent !important" id="showIng">
              <div id="whitelist" >
@@ -68,10 +68,30 @@
               
           </div>
           </div>
+
         <br>
         <br>
+        </div>
+        <div id="lastButOneDiv"></div>
+        <div id="lastDiv"></div>
         
         <style type="text/css">
+        #lastButOneDiv{
+          width: 100%;
+          height: 5px;
+          background-color: white;
+          position: fixed;
+          bottom: 50px;  
+        }
+        #lastDiv{
+           box-shadow: 10px 10px 5px 5px #888888;
+           background-color: #5C4033;
+        //  background-image: url("img/fruits.jpg");
+          height:50px;
+          position:fixed;
+          bottom: 0;
+          width: 100%;
+        }
         .responsive-width {
             font-size: 1.5vw;
             margin: auto;
@@ -106,7 +126,7 @@
                 if(wl!="")
                 {
                     
-                    $("#whitelist").append("<button class='btn btn-success addedIngredient' onclick='removeIngredient(this)'>"+wl+"  "+ "<span class='glyphicon glyphicon-remove'></span></button><span> </span>");
+                    $("#whitelist").append("<button class='btn btn-success' onclick='removeIngredient(this)' value='"+wl+"'>"+wl+"  "+ "<span class='glyphicon glyphicon-remove'></span></button><span> </span>");
              
                 document.getElementById("ing").value="";
                 wlarray = wlarray + "," + wl;
@@ -120,7 +140,7 @@
                 var bl = $("#ing").val();
                 if(bl!="")
                 {
-                $("#blacklist").append("<button class='btn btn-danger' onclick='removeIngredient(this)'>"+bl+"  "+"<span class='glyphicon glyphicon-remove'></span></button><span>  </span>");
+                $("#blacklist").append("<button class='btn btn-danger' onclick='removeIngredient(this)' value='"+bl+"'>"+bl+"  "+"<span class='glyphicon glyphicon-remove'></span></button><span>  </span>");
                 document.getElementById("ing").value="";
                 blarray = blarray + "," + bl;
                  document.getElementById("black_list").value=blarray;
@@ -130,7 +150,20 @@
 
             function removeIngredient(item)
             {
+              var cl = $(item).attr('class');
+              alert(cl);
+              var clvalue = ","+$(item).val();
+              if(cl=='btn btn-success'){
+                wlarray = wlarray.replace(clvalue," ");
+                alert(wlarray);
+              }
+              else if(cl=='btn btn-danger'){
+                blarray = blarray.replace(clvalue," ");
+                 alert(blarray);
+              }
+
               $(item).remove();
+
             }
 
 
@@ -178,6 +211,9 @@
             body{
                 background-color:#8B7765;
             } 
+            .whitelist button, .blacklist button{
+              color: black;
+            }
            
         </style>    
     </body>
